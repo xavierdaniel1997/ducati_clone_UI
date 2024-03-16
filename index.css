@@ -1,0 +1,885 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+.navbar_container {
+    background-image: url("https://images.ctfassets.net/x7j9qwvpvr5s/5sYx9CNAXRSrml9OS6XRX/695058b6de9ecf69e5ae0276d01d8f46/01.jpg?fm=webp&q=90");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.main_container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+}
+
+.navbar_one {
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.left_section_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left_section_logo h3 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.scramblerlogo {
+    width: 6rem;
+    height: 30px;
+}
+
+.right_section_logo {
+    display: flex;
+    color: #fff;
+    gap: 15px;
+    align-items: center;
+}
+
+.right_section_logo .indiabtn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.indiabtn img {
+    object-fit: contain;
+}
+
+.vertical_line {
+    border: .1px solid white;
+    height: 1rem;
+}
+
+.nav_title h3 {
+    font-size: 13px;
+}
+
+
+.navbar_two {
+    width: 85%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fafafa;
+    position: fixed;
+    top: 80px;
+    margin-left: 75px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_two_left {}
+
+.navbar_two_left ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.navbar_two_left ul li {
+    list-style: none;
+}
+
+.ducati_logo {}
+
+.logo {
+    width: 55px;
+    height: 58px;
+}
+
+.navbar_two_right {}
+
+.navbar_two_right ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin-right: 30px;
+}
+
+.navbar_two_right ul li {
+    list-style: none;
+}
+
+.detials {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14rem 8rem 2.8rem 8rem;
+
+}
+
+.detials h2 {
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.detials h1 {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.detials p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100 !important;
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+    letter-spacing: 2px;
+
+}
+
+.discover_btn_container {
+    text-align: right;
+    margin-top: 6rem;
+}
+
+.discover_btn_container button {
+    color: #fff;
+    background-color: #cc0000;
+    padding: 1rem 2.5rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ducati range */
+.ducati_range_container {
+    margin: 3rem 6rem;
+}
+
+.range_btn {
+    text-align: center;
+}
+
+.range_btn button {
+    color: white;
+    border: none;
+    background: #000;
+    padding: .8rem 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.bikes_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.bike_one {
+    margin-top: 3rem;
+}
+
+.newbtn {
+    padding: 5px 14px;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.bike_one_img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.name_add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_add p {
+    font-size: 22px;
+    border-bottom: 3px solid transparent;
+}
+
+.name_add p:hover {
+    border-bottom: 3px solid #cc0000;
+}
+
+.name_add button {
+    border: none;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.bikes_range {
+    width: 100%;
+    display: flex;
+    height: 5px;
+    margin-top: 3rem;
+}
+
+.redrange {
+    width: 30%;
+    background-color: #cc0000;
+    border-radius: 10px;
+
+}
+
+.whiterange {
+    width: 70%;
+    background: #000000;
+    opacity: 10%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* highlights_container */
+
+.highlights_container {
+    margin-top: 3rem;
+}
+
+.highlights_container_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: #696969;
+}
+
+.splitlines {
+    height: 1px;
+    width: 15%;
+    background-color: #696969;
+}
+
+.hightlight_details_photo {
+    margin: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 2rem;
+    border-left: 5px solid #cc0000;
+}
+
+.left_details .title {
+    font-size: 16px;
+    color: #696969;
+    padding: 0;
+    margin: 0;
+}
+
+.left_details h2 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.left_details p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    padding: 0;
+    margin: 0;
+    color: #0f0f0f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.left_details span {
+    padding: 0;
+    margin: 0;
+    color: #cc0000;
+    font-size: 16px;
+}
+
+.right_photo {
+    flex: 1;
+}
+
+/* albam */
+
+.albam_container {
+    margin-top: 4rem;
+}
+
+.albams {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top_photos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -10px;
+    z-index: -1;
+
+}
+
+.image_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image_wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+
+.overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overlay span {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.overlay h1 {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay button {
+    width: 24%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+
+
+.bottom_photos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+
+.albam_image {
+    width: 100%;
+}
+
+/* latest news container */
+.latest_news_container {
+    padding-top: 3rem;
+    background-color: #f8f8f8;
+}
+
+.news_container {
+    margin: 3rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+
+.news_wrapper {
+    background-color: #fff;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: box-shadow 0.3s ease;
+}
+
+.news_wrapper:hover {
+    -webkit-box-shadow: 1px 13px 51px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 13px 51px -14px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 13px 51px -14px rgba(0, 0, 0, 0.75);
+}
+
+.news_image {
+    width: 400px;
+}
+
+.news_image img {
+    width: 100%;
+}
+
+.news_details {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 4rem 2rem;
+    gap: 15px;
+}
+
+.news_details span {
+    padding: 0;
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+}
+
+.news_details p {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+.enjoy_ducati {
+    padding-top: 3rem;
+    background-color: #f8f8f8;
+    margin-top: -50px;
+    /* height: 200px; */
+}
+
+.ducati_images {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.tag_image {
+    position: relative;
+    /* display: inline-block; */
+    z-index: 2;
+}
+
+.tag_image img {
+    width: 100%;
+    height: auto;
+
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tag_image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+/* .tag_image_photo{
+    position: absolute;
+    z-index: -1;
+} */
+.divail_container {
+    margin: 4rem 6rem;
+    text-align: center;
+    position: relative;
+
+}
+
+.divail_image {
+    z-index: -1;
+    position: absolute;
+}
+
+.divail_details {
+    position: absolute;
+    z-index: -1;
+    width: 33%;
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.divail_details h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.divail_details p {
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.divail_details button {
+    margin-top: 10rem;
+    padding: 20px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #cc0000;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.divail_details button:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.highlights_two_container {
+    margin-top: 47rem;
+}
+
+.two_details {
+    display: flex;
+    margin: 6rem;
+}
+
+.two_details {
+    background-color: #fff;
+    -webkit-box-shadow: 1px 13px 51px -36px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 13px 51px -36px rgba(0, 0, 0, 1);
+    box-shadow: 1px 13px 51px -36px rgba(0, 0, 0, 1);
+}
+
+.left_detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 3rem;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left_detail h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.left_detail p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.left_detail span {
+    padding: 0;
+    margin: 0;
+    color: #cc0000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.streetfighter_container {
+    margin: 4rem 6rem;
+    position: relative;
+}
+
+.streetfighter_image_container {
+    position: absolute;
+    z-index: -1;
+}
+
+.streetfighter_image {}
+
+.streetfighter_details {
+    position: absolute;
+    z-index: -1;
+    color: #fff;
+    width: 30%;
+    padding: 3rem 5rem;
+}
+
+.streetfighter_details h1 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.streetfighter_details p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.configbtn {
+    padding: 1rem 2rem;
+    background-color: #cc0000;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    margin-top: 15rem;
+}
+
+.configbtn:hover {
+    transform: scale(1.03);
+}
+
+.tranning_container {
+    margin: 3rem 6rem;
+    display: flex;
+    -webkit-box-shadow: 1px 13px 54px -28px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 13px 54px -28px rgba(0, 0, 0, 1);
+    box-shadow: 1px 13px 54px -28px rgba(0, 0, 0, 1);
+}
+
+.detail_tranning {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+
+.detail_tranning .tranning_title {
+    color: #666666;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.detail_tranning h2 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.detail_tranning p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+.detail_tranning span{
+    color: #cc0000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.right_tranning img.traning_img {
+    width: 100%;
+    height: 100%; 
+    object-fit: fill;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+.disclaimer_container{
+    margin: 3rem 6rem;
+    display: flex;
+    justify-content: center;
+}
+.disclaimer_container p{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
+}
+.disclaimer_container span{
+    font-weight: 500;
+}
+
+/* email_container */
+
+.email_container{
+    margin: 4rem 6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 1px solid #d5d4d4;
+    padding: 6rem;
+    border-bottom: 1px solid #d5d4d4;
+    
+}
+.email_detials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.email_container h1{
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+.email_container .top_desc ,.bottm_desc{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1rem;
+    
+}
+.email_input_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.email_input_btn input{
+    width: 31%;
+    padding: 1.4rem;
+    font-size: 16px;
+    color: #666666;
+    background-color: #fff;
+    border: 1px solid rgb(211, 211, 211);
+    outline: none;
+}
+.email_input_btn button{
+    padding: 1.4rem 3rem;
+    background-color: #cc0000;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+}
+
+.footer_container{
+    background-color: #000000;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.footer_title{
+    text-align: center;
+}
+.footer_img{
+    width: 550px;
+}
+.footer_list_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.footer_list_container li{
+    color: #666666;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer_para{
+    color: #666666;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+}
